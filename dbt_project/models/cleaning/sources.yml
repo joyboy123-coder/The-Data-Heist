@@ -1,0 +1,9 @@
+version : 2
+
+
+sources:
+   - name : raw
+     schema : ORDERS_SCHEMA
+     tables:
+       - name : orders
+
