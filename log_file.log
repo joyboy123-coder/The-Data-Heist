@@ -1,0 +1,41 @@
+2025-08-23 13:46:49,842 - INFO - ------------------------------------------------------
+2025-08-23 13:46:49,843 - INFO - EXTRACTING DATA
+
+2025-08-23 13:46:49,843 - INFO - Starting the Data Extraction from C:\Users\yamin\OneDrive\The-Data-Heist\data\raw_data.csv
+
+2025-08-23 13:46:50,546 - INFO - DATA EXTRACTED SUCCESSFULLY
+2025-08-23 13:46:50,547 - INFO - --------------------------------------------------------
+
+2025-08-23 13:46:50,547 - INFO - DATA CLEANING STARTED...
+
+2025-08-23 13:46:50,548 - INFO - Standardized column names to uppercase.
+2025-08-23 13:46:52,129 - INFO - Cleaned CUSTOMER_NAME, split into FIRST_NAME and LAST_NAME, dropped rows with missing LAST_NAME.
+2025-08-23 13:46:53,182 - INFO - Standardized EMAIL column, fixed domains, dropped duplicates.
+2025-08-23 13:46:53,663 - INFO - Cleaned CITY names, mapped REGION values.
+2025-08-23 13:46:54,097 - INFO - Cleaned PRODUCT_NAME and CATEGORY mapping applied.
+2025-08-23 13:46:54,520 - INFO - Normalized STATUS and PAYMENT_TYPE values.
+2025-08-23 13:46:55,244 - INFO - Cleaned AMOUNT values and mapped realistic product prices.
+2025-08-23 13:46:56,160 - INFO - Cleaned PURCHASE_DATE, filled missing values with random dates between 2020–2025.
+2025-08-23 13:46:58,674 - INFO - ------------------------------------------------------------
+2025-08-23 13:46:58,674 - INFO - DATA CLEANING ALL COLUMNS DONE - DATE IS PURE :)
+2025-08-23 13:46:58,675 - INFO - ------------------------------------------------------------
+
+2025-08-23 13:46:58,676 - INFO - DATA LOADING
+
+2025-08-23 13:46:58,676 - INFO - Connecting to Snowflake
+2025-08-23 13:46:58,678 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.10.0, Platform: Windows-10-10.0.26100-SP0
+2025-08-23 13:46:58,679 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-23 13:46:58,680 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-08-23 13:46:58,680 - INFO - THIS CONNECTION IS IN INSECURE MODE. IT MEANS THE CERTIFICATE WILL BE VALIDATED BUT THE CERTIFICATE REVOCATION STATUS WILL NOT BE CHECKED.
+2025-08-23 13:46:59,238 - INFO - THIS CONNECTION IS IN INSECURE MODE. IT MEANS THE CERTIFICATE WILL BE VALIDATED BUT THE CERTIFICATE REVOCATION STATUS WILL NOT BE CHECKED.
+2025-08-23 13:46:59,706 - INFO - Snowflake Connected
+2025-08-23 13:47:03,754 - INFO - THIS CONNECTION IS IN INSECURE MODE. IT MEANS THE CERTIFICATE WILL BE VALIDATED BUT THE CERTIFICATE REVOCATION STATUS WILL NOT BE CHECKED.
+2025-08-23 13:47:10,963 - INFO - Successfully 76395 loaded data into Snowflake : ORDERS
+
+2025-08-23 13:47:10,963 - INFO - --------------------------------------------
+2025-08-23 13:47:10,963 - INFO - DATA LOADING COMPLETED :)
+2025-08-23 13:47:10,964 - INFO - --------------------------------------------
+
+2025-08-23 13:47:10,964 - INFO - ETL PIPELINE FINISHED SUCCESFULLY :)
+2025-08-23 13:47:10,965 - INFO - closed
+2025-08-23 13:47:10,965 - INFO - No async queries seem to be running, deleting session

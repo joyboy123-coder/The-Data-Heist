@@ -100,7 +100,6 @@ def transform(df):
         df['PURCHASE_DATE'] = df['PURCHASE_DATE'].dt.date
         logging.info("Cleaned PURCHASE_DATE, filled missing values with random dates between 2020–2025.")
         
-        df.to_csv("cleaned_data.csv",index =False)
         return df
     
 
